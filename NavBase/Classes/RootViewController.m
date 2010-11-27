@@ -26,24 +26,25 @@
   
   // Charger le fichier .plist dans un tableau que l'on appelera  arrayFromFile
   NSString *path = [[NSBundle mainBundle] pathForResource:@"series" ofType:@"plist"];
+  NSLog(@"path : %@", path);
   NSArray *arrayFromFile = [[NSMutableArray alloc] initWithContentsOfFile:path];
+  NSLog(@"arrayFromFile : %@",[arrayFromFile lastObject]);
   
-  // Créons un tableau temporaire que nous allons remplir avec un objet Serie par NSDictionnary contenu dans le fichier .plist
-  // Notez l'utilisation de NSEnumerator pour parcourir un tableau
+  // Remplissage tableau d'objets Serie issus du NSDictionnary du fichier .plist
+  // NSEnumerator pour parcourir un tableau
   NSMutableArray *seriesToAdd = [[NSMutableArray alloc] init];
   NSEnumerator *enumerator = [arrayFromFile objectEnumerator];
   NSDictionary *anObject;
   while (anObject = [enumerator nextObject]) {
     Serie *sr = [[Serie alloc] initWithDictionaryFromPlist: anObject];
     [seriesToAdd addObject: sr];
-    NSLog(@"série ajoutée, title :",sr.title);
+    NSLog(@"série ajoutée, title : %@",sr.title);
     [sr release];
   }
   
-  // Remplir la propriété tabSeries avec le contenu du NSMutableArray précédent
   self.tabSeries = [NSArray arrayWithArray:seriesToAdd];
   
-  // Gestion de la mémoire : pour chaque alloc, n'oubliez pas le release qui va avec !
+  // mémoire : pour chaque alloc, un release
   [seriesToAdd release];
   [arrayFromFile release];
  

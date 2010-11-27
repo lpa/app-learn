@@ -18,9 +18,9 @@
 - (id) initWithDictionaryFromPlist: (NSDictionary *) dictionnary {
   [self init];
   
-  self.title = [dictionnary objectForKey:@"title"];
-  self.url = [NSURL URLWithString:[dictionnary objectForKey:@"url"]];
-  self.description = [dictionnary objectForKey:@"description"];
+  self.title = [dictionnary objectForKey:@"Title"];
+  self.url = [NSURL URLWithString:[dictionnary objectForKey:@"Url"]];
+  self.description = [dictionnary objectForKey:@"Description"];
   
   return self;
 }

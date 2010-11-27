@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -306,8 +308,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -325,16 +325,16 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4D8AF7D012A1BBC500CC2D44</string>
+										<string>4D8AF7FB12A1C35F00CC2D44</string>
 										<key>history</key>
 										<array>
 											<string>4D8AF74B12A17EA800CC2D44</string>
 											<string>4D8AF74C12A17EA800CC2D44</string>
-											<string>4D8AF7B012A1B1DA00CC2D44</string>
 											<string>4D8AF7B112A1B1DA00CC2D44</string>
 											<string>4D8AF7BB12A1B89D00CC2D44</string>
 											<string>4D8AF7BC12A1B89D00CC2D44</string>
-											<string>4D8AF7BE12A1B89D00CC2D44</string>
+											<string>4D8AF7F912A1C35F00CC2D44</string>
+											<string>4D8AF7FA12A1C35F00CC2D44</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -873,6 +873,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -885,7 +887,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {650, 209}}</string>
 								<key>RubberWindowFrame</key>
-								<string>21 505 650 250 0 0 1280 778 </string>
+								<string>23 104 650 250 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -914,7 +916,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>21 505 650 250 0 0 1280 778 </string>
+			<string>23 104 650 250 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
