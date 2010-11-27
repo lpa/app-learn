@@ -10,6 +10,9 @@
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 4D8AF72D12A16A5300CC2D44 /* NavBase */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* NavBase */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* NavBase */,
+		);
 		codeSenseManager = 4D8AF73D12A16A6500CC2D44 /* Code sense */;
 		executables = (
 			4D8AF72D12A16A5300CC2D44 /* NavBase */,
@@ -40,6 +43,13 @@
 			PBXPerProjectTemplateStateSaveDate = 312568403;
 			PBXWorkspaceStateSaveDate = 312568403;
 		};
+		perUserProjectItems = {
+			4D8AF74B12A17EA800CC2D44 /* PlistBookmark */ = 4D8AF74B12A17EA800CC2D44 /* PlistBookmark */;
+			4D8AF74C12A17EA800CC2D44 /* PlistBookmark */ = 4D8AF74C12A17EA800CC2D44 /* PlistBookmark */;
+			4D8AF74D12A17EA800CC2D44 /* PBXTextBookmark */ = 4D8AF74D12A17EA800CC2D44 /* PBXTextBookmark */;
+			4D8AF74E12A17EA800CC2D44 /* PBXTextBookmark */ = 4D8AF74E12A17EA800CC2D44 /* PBXTextBookmark */;
+			4D8AF75A12A1974000CC2D44 /* PBXTextBookmark */ = 4D8AF75A12A1974000CC2D44 /* PBXTextBookmark */;
+		};
 		sourceControlManager = 4D8AF73C12A16A6500CC2D44 /* Source Control */;
 		userBuildSettings = {
 		};
@@ -60,6 +70,7 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -84,5 +95,61 @@
 	4D8AF73D12A16A6500CC2D44 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	4D8AF74412A17A5800CC2D44 /* serie.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 387}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 204}";
+		};
+	};
+	4D8AF74B12A17EA800CC2D44 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* NavBase-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/laurent/Développement/Projets/app-learn/NavBase/NavBase-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	4D8AF74C12A17EA800CC2D44 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 4D8AF74212A1703800CC2D44 /* series.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/laurent/Développement/Projets/app-learn/NavBase/series.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	4D8AF74D12A17EA800CC2D44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4D8AF74412A17A5800CC2D44 /* serie.h */;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+		rType = 0;
+	};
+	4D8AF74E12A17EA800CC2D44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4D8AF74412A17A5800CC2D44 /* serie.h */;
+		name = "serie.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 204;
+		vrLoc = 0;
+	};
+	4D8AF75A12A1974000CC2D44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4D8AF74412A17A5800CC2D44 /* serie.h */;
+		name = "serie.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 204;
+		vrLoc = 0;
 	};
 }
