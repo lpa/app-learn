@@ -49,6 +49,7 @@
 			4D8AF74D12A17EA800CC2D44 /* PBXTextBookmark */ = 4D8AF74D12A17EA800CC2D44 /* PBXTextBookmark */;
 			4D8AF74E12A17EA800CC2D44 /* PBXTextBookmark */ = 4D8AF74E12A17EA800CC2D44 /* PBXTextBookmark */;
 			4D8AF75A12A1974000CC2D44 /* PBXTextBookmark */ = 4D8AF75A12A1974000CC2D44 /* PBXTextBookmark */;
+			4D8AF76112A1980200CC2D44 /* PBXTextBookmark */ = 4D8AF76112A1980200CC2D44 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 4D8AF73C12A16A6500CC2D44 /* Source Control */;
 		userBuildSettings = {
@@ -143,6 +144,16 @@
 		vrLoc = 0;
 	};
 	4D8AF75A12A1974000CC2D44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4D8AF74412A17A5800CC2D44 /* serie.h */;
+		name = "serie.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 204;
+		vrLoc = 0;
+	};
+	4D8AF76112A1980200CC2D44 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 4D8AF74412A17A5800CC2D44 /* serie.h */;
 		name = "serie.h: 1";
