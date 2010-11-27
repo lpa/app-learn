@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Title</key>
+		<string>Druuna</string>
+		<key>Url</key>
+		<string>http://www.fotegrav.staging/series-bd/druuna</string>
+		<key>Description</key>
+		<string>Cette femme très belle, un peu ingénue et allumeuse évolue dans un monde des plus glauques</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Treize (XIII)</string>
+		<key>Url</key>
+		<string>http://www.fotegrav.staging/series-bd/xiii</string>
+		<key>Description</key>
+		<string>Le héro de cette longue saga est une incarnation vivante de la malchance</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Maus</string>
+		<key>Url</key>
+		<string>http://www.fotegrav.staging/series-bd/maus</string>
+		<key>Description</key>
+		<string>Une histoire d&apos;animaux vécue par un allemand pendant la seconde guerre mondiale</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Les Mondes d&apos;Aldébaran</string>
+		<key>Url</key>
+		<string>http://www.fotegrav.staging/series-bd/les+mondes+d+aldebaran</string>
+		<key>Description</key>
+		<string>Les Mondes d&apos;Aldébaran s&apos;organisent autour de trois piliers : Aldébaran, Bételgeuse et Antarès</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Les Passagers du Vent</string>
+		<key>Url</key>
+		<string>http://www.fotegrav.staging/series-bd/les+passagers+du+vent</string>
+		<key>Description</key>
+		<string>Une saga maritime qui retrace la vie à bord des navires et le commerce des esclaves</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Blacksad</string>
+		<key>Url</key>
+		<string>http://www.fotegrav.staging/series-bd/blacksad</string>
+		<key>Description</key>
+		<string>Dans la tête de John Blacksad, détective privé de son état, l&apos;ambiance n&apos;est ni rose ni gaie</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>La Quête de l&apos;Oiseau du Temps</string>
+		<key>Url</key>
+		<string>http://www.fotegrav.staging/series-bd/la+quete+de+l+oiseau+du+temps</string>
+		<key>Description</key>
+		<string>Un groupe de héros va évoluer d&apos;aventures périlleuses en aventures incroyables dans un mode de fantasy</string>
+	</dict>
+</array>
+</plist>
