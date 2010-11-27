@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface RootViewController : UITableViewController {
+  
+  NSArray *tabSeries;
 }
+
+@property (nonatomic, retain) NSArray *tabSeries;
+
 
 @end

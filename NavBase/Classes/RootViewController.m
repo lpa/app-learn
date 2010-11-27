@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-
+#import "Serie.h"
 
 @implementation RootViewController
 
@@ -15,14 +15,40 @@
 #pragma mark -
 #pragma mark View lifecycle
 
-/*
+@synthesize tabSeries;
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+ 
+  // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+  // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  
+  // Charger le fichier .plist dans un tableau que l'on appelera  arrayFromFile
+  NSString *path = [[NSBundle mainBundle] pathForResource:@"series" ofType:@"plist"];
+  NSArray *arrayFromFile = [[NSMutableArray alloc] initWithContentsOfFile:path];
+  
+  // Créons un tableau temporaire que nous allons remplir avec un objet Serie par NSDictionnary contenu dans le fichier .plist
+  // Notez l'utilisation de NSEnumerator pour parcourir un tableau
+  NSMutableArray *seriesToAdd = [[NSMutableArray alloc] init];
+  NSEnumerator *enumerator = [arrayFromFile objectEnumerator];
+  NSDictionary *anObject;
+  while (anObject = [enumerator nextObject]) {
+    Serie *sr = [[Serie alloc] initWithDictionaryFromPlist: anObject];
+    [seriesToAdd addObject: sr];
+    NSLog(@"série ajoutée, title :",sr.title);
+    [sr release];
+  }
+  
+  // Remplir la propriété tabSeries avec le contenu du NSMutableArray précédent
+  self.tabSeries = [NSArray arrayWithArray:seriesToAdd];
+  
+  // Gestion de la mémoire : pour chaque alloc, n'oubliez pas le release qui va avec !
+  [seriesToAdd release];
+  [arrayFromFile release];
+ 
 }
-*/
+
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
@@ -59,29 +85,42 @@
 
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+  return 1;
 }
 
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+  // Nous ne tenons pas compte du numéro de section puisqu'il n'y en a qu'une
+  // Dans cette unique section il y a tous les éléments du tableau, on retourne donc le nombre
+  return [self.tabSeries count];
 }
 
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
-    
-	// Configure the cell.
-
-    return cell;
+  static NSString *CellIdentifier = @"Cell";
+  
+  // Les cellules sont mises en cache pour accélérer le traitement, sous l'identifiant "Cell",
+  // on essaie récupère ce modèle de cellule s'il est déjà en cache
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+  
+  // Si on n'a pas réussi à sortir une cellule du cache, on crée un nouveau modèle de cellule
+  // et on l'enregistre dans le cache
+  if (cell == nil) {
+    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+  }
+  
+  // On récupère l'objet Serie qui correspond à la ligne que l'on souhaite afficher
+  Serie *sr = [self.tabSeries objectAtIndex:indexPath.row];
+  
+  // On configure la cellule avec le titre du site et sa description
+  cell.textLabel.text = sr.title;
+  cell.detailTextLabel.text = sr.description;
+  
+  // On renvoie la cellule configurée pour l'affichage
+  return cell;
 }
 
 
@@ -146,7 +185,7 @@
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
+    		
     // Relinquish ownership any cached data, images, etc that aren't in use.
 }
 
@@ -158,6 +197,7 @@
 
 - (void)dealloc {
     [super dealloc];
+    [tabSeries release];
 }
 
 
