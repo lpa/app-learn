@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "Serie.h"
+#import "DetailViewController.h"
 
 @implementation RootViewController
 
@@ -120,6 +121,9 @@
   cell.textLabel.text = sr.title;
   cell.detailTextLabel.text = sr.description;
   
+  // taquet indiquant que la cellule fait progresser dans la hierarchie des vues
+  cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+  
   // On renvoie la cellule configurée pour l'affichage
   return cell;
 }
@@ -170,13 +174,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-	/*
-	 <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-	 [self.navigationController pushViewController:detailViewController animated:YES];
-	 [detailViewController release];
-	 */
+	DetailViewController *detailVC = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+	detailVC.sr = [self.tabSeries objectAtIndex:indexPath.row];
+  
+	[self.navigationController pushViewController:detailVC animated:YES];
+	[detailVC release];
 }
 
 

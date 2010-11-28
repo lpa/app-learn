@@ -17,6 +17,8 @@
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
 		4D8AF74312A1703800CC2D44 /* series.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D8AF74212A1703800CC2D44 /* series.plist */; };
 		4D8AF74612A17A5800CC2D44 /* Serie.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8AF74512A17A5800CC2D44 /* Serie.m */; };
+		4DDAF91812A2BD41009943A7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAF91612A2BD41009943A7 /* DetailViewController.m */; };
+		4DDAF91912A2BD41009943A7 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAF91712A2BD41009943A7 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,9 @@
 		4D8AF74212A1703800CC2D44 /* series.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = series.plist; sourceTree = "<group>"; };
 		4D8AF74412A17A5800CC2D44 /* Serie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Serie.h; path = ../Serie.h; sourceTree = "<group>"; };
 		4D8AF74512A17A5800CC2D44 /* Serie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Serie.m; path = ../Serie.m; sourceTree = "<group>"; };
+		4DDAF91512A2BD41009943A7 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		4DDAF91612A2BD41009943A7 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		4DDAF91712A2BD41009943A7 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* NavBase-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NavBase-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +66,9 @@
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* NavBaseAppDelegate.h */,
 				1D3623250D0F684500981E51 /* NavBaseAppDelegate.m */,
+				4DDAF91512A2BD41009943A7 /* DetailViewController.h */,
+				4DDAF91612A2BD41009943A7 /* DetailViewController.m */,
+				4DDAF91712A2BD41009943A7 /* DetailViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
 				4D8AF74312A1703800CC2D44 /* series.plist in Resources */,
+				4DDAF91912A2BD41009943A7 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +191,7 @@
 				1D3623260D0F684500981E51 /* NavBaseAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				4D8AF74612A17A5800CC2D44 /* Serie.m in Sources */,
+				4DDAF91812A2BD41009943A7 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
