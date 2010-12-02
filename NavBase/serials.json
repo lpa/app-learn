@@ -1,0 +1,93 @@
+[
+   {
+      "id":1,
+      "name":"Maus",
+      "story":{
+         "thumb":{
+            "name":"maus.jpg",
+            "alt":"maus",
+            "path":"http:\/\/assets.fotegrav.dev\/0000\/0000\/0019\/maus.jpg?v=1.0"
+         },
+         "title":"Maus",
+         "description":"Maus... si tu ne dois lire qu'une seule bande dessin\u00e9e dans ta vie, lis celle-l\u00e0 parce qu'elle d\u00e9passe toutes les autres."
+      }
+   },
+   {
+      "id":7,
+      "name":"La Qu\u00eate de l'Oiseau du temps",
+      "story":{
+         "thumb":{
+            "name":"quete+de+l+oiseau+du+temps.jpg",
+            "alt":"La qu\u00eate de l'oiseau du temps",
+            "path":"http:\/\/assets.fotegrav.dev\/0000\/0000\/0025\/quete+de+l+oiseau+du+temps.jpg?v=1.0"
+         },
+         "title":"La Qu\u00eate de l'Oiseau du temps",
+         "description":"La Qu\u00eate de l'Oiseau du temps est une s\u00e9rie de r\u00e9f\u00e9rence de la BD H\u00e9ro\u00efc Fantasy. Les dessins sont sign\u00e9s R\u00e9gis Loisel pour les premiers tomes historiques. Le sc\u00e9nario est de Serge Le Tendre."
+      }
+   },
+   {
+      "id":6,
+      "name":"Blacksad",
+      "story":{
+         "thumb":{
+            "name":"blacksad.jpg",
+            "alt":"Blacksad",
+            "path":"http:\/\/assets.fotegrav.dev\/0000\/0000\/0024\/blacksad.jpg?v=1.0"
+         },
+         "title":"Blacksad",
+         "description":"Blacksad quelques syllabes qui sonnent et qui r\u00e9sonnent dans le New York ann\u00e9es 50. Mafia, jazz, dockers, guerre froide, int\u00e9gration de la population noire"
+      }
+   },
+   {
+      "id":5,
+      "name":"Druuna",
+      "story":{
+         "thumb":{
+            "name":"druuna.jpg",
+            "alt":"Druuna",
+            "path":"http:\/\/assets.fotegrav.dev\/0000\/0000\/023\/druuna.jpg?v=1.0"
+         },
+         "title":"Druuna",
+         "description":"Druuna est sans nulle doute l'une des s\u00e9ries cul (-tes) de la BD. Dans le genre \u00e9rotique, \u00e9videmment, avec des penchants assez prononc\u00e9s vers le SM ou le porno"
+      }
+   },
+   {
+      "id":4,
+      "name":"Treize (XIII)",
+      "story":{
+         "thumb":{
+            "name":"XIII.jpg",
+            "alt":"XIII",
+            "path":"http:\/\/assets.fotegrav.dev\/0000\/0000\/0022\/XIII.jpg?v=1.0"
+         },
+         "title":"XIII",
+         "description":"Le chiffre 13 porte \u00e0 lui seul une charge superstitieuse consid\u00e9rable. Tant\u00f4t signe de chance, tant\u00f4t symbole de malheur, il traverse le temps et les \u00e9poques en imposant aux hommes sa dictature ambigu\u00eb..."
+      }
+   },
+   {
+      "id":3,
+      "name":"Les passagers du vent",
+      "story":{
+         "thumb":{
+            "name":"passagers+du+temps.jpg",
+            "alt":"les passagers du temps",
+            "path":"http:\/\/assets.fotegrav.dev\/0000\/0000\/0021\/passagers+du+temps.jpg?v=1.0"
+         },
+         "title":"Les passagers du vent",
+         "description":"La fille sous la dunette, premier tome de la s\u00e9rie, marque le public par l'originalit\u00e9 de son sujet, la pr\u00e9cision de ses d\u00e9cors et la force de caract\u00e8re de ses protagonistes : Isa, Mary et Hoel..."
+      }
+   },
+   {
+      "id":2,
+      "name":"Les Mondes d'Ald\u00e9baran",
+      "story":{
+         "thumb":{
+            "name":"aldebaran.jpg",
+            "alt":"aldebaran",
+            "path":"http:\/\/assets.fotegrav.dev\/0000\/0000\/0020\/aldebaran.jpg?v=1.0"
+         },
+         "title":"Les Mondes d'Ald\u00e9baran",
+         "description":"Loin d'\u00eatre r\u00e9serv\u00e9e aux seuls amateurs de SF, la s\u00e9rie Ald\u00e9baran ouvre largement les portes de son public et donne m\u00eame une dimension \u00e9cologique au sujet."
+      }
+   }
+]
