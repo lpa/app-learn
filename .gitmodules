@@ -1,0 +1,3 @@
+[submodule "submodule/UIImage_resize"]
+	path = submodule/UIImage_resize
+	url = https://github.com/coryalder/UIImage_Resize.git
